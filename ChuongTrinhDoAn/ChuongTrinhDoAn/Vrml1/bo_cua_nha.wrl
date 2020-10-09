@@ -1,0 +1,57 @@
+#VRML V2.0 utf8
+
+
+		DEF	cua_trai Transform {
+			translation	-0.9 0 0
+			children [
+				DEF	quay1 Transform	{
+					translation	0.5 0 0
+					children [
+						Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor .88 .15 .01
+							specularColor .19 .03 .03
+							ambientIntensity .0833
+							shininess .08
+						}
+					}
+					geometry Box {size 1 2 0.01}
+				}
+				DEF	nucua_trai Transform {
+					rotation 1 0 0 1.54
+					translation	0.4 -0.1 0.05
+					children [
+						Shape {
+							appearance Appearance {
+								material Material {
+									diffuseColor 0 .35 .25
+									specularColor 0 .31 .36
+									ambientIntensity .0533
+									shininess .32
+								}
+							}
+							geometry Cylinder {
+								height 0.1 
+								radius 0.04
+							}
+						}
+					]
+				}
+					]
+				}
+			DEF quay CylinderSensor {
+			enabled	TRUE
+			maxAngle -1.8
+			minAngle 0
+		}
+			]
+		}
+	   ROUTE quay.rotation_changed TO cua_trai.rotation
+
+
+
+
+
+		#
+

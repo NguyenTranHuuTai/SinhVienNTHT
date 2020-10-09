@@ -1,0 +1,9 @@
+#VRML V2.0 utf8
+
+Anchor{
+children [
+Shape{
+geometry Sphere{}}]
+url "http://pdt.vlute.edu.vn/	 "
+description "Toi trang web cua truong"
+}

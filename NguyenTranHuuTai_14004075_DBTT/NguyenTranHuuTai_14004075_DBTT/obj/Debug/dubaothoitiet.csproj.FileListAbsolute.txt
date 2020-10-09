@@ -1,0 +1,25 @@
+C:\Users\nguyenthao\Downloads\howto_weather_forecast2\bin\Debug\Du bao thoi tiet.exe
+C:\Users\nguyenthao\Downloads\howto_weather_forecast2\bin\Debug\Du bao thoi tiet.pdb
+C:\Users\nguyenthao\Downloads\howto_weather_forecast2\obj\Debug\howto_weather_forecast2.Properties.Resources.resources
+C:\Users\nguyenthao\Downloads\howto_weather_forecast2\obj\Debug\dubaothoitiet.csproj.GenerateResource.Cache
+C:\Users\nguyenthao\Downloads\howto_weather_forecast2\obj\Debug\Du bao thoi tiet.exe
+C:\Users\nguyenthao\Downloads\howto_weather_forecast2\obj\Debug\Du bao thoi tiet.pdb
+C:\Users\nguyenthao\Downloads\howto_weather_forecast2\obj\Debug\dubaothoitiet.Form1.resources
+C:\Users\pc\Desktop\DuBaoThoiTiet\bin\Debug\Du bao thoi tiet.exe
+C:\Users\pc\Desktop\DuBaoThoiTiet\bin\Debug\Du bao thoi tiet.pdb
+C:\Users\pc\Desktop\DuBaoThoiTiet\obj\Debug\dubaothoitiet.csprojAssemblyReference.cache
+C:\Users\pc\Desktop\DuBaoThoiTiet\obj\Debug\dubaothoitiet.Form1.resources
+C:\Users\pc\Desktop\DuBaoThoiTiet\obj\Debug\howto_weather_forecast2.Properties.Resources.resources
+C:\Users\pc\Desktop\DuBaoThoiTiet\obj\Debug\dubaothoitiet.csproj.GenerateResource.cache
+C:\Users\pc\Desktop\DuBaoThoiTiet\obj\Debug\dubaothoitiet.csproj.CoreCompileInputs.cache
+C:\Users\pc\Desktop\DuBaoThoiTiet\obj\Debug\Du bao thoi tiet.exe
+C:\Users\pc\Desktop\DuBaoThoiTiet\obj\Debug\Du bao thoi tiet.pdb
+C:\Users\pc\Desktop\NguyenTranHuuTai_14004075_DBTT\bin\Debug\Du bao thoi tiet.exe
+C:\Users\pc\Desktop\NguyenTranHuuTai_14004075_DBTT\bin\Debug\Du bao thoi tiet.pdb
+C:\Users\pc\Desktop\NguyenTranHuuTai_14004075_DBTT\obj\Debug\dubaothoitiet.csprojAssemblyReference.cache
+C:\Users\pc\Desktop\NguyenTranHuuTai_14004075_DBTT\obj\Debug\dubaothoitiet.Form1.resources
+C:\Users\pc\Desktop\NguyenTranHuuTai_14004075_DBTT\obj\Debug\howto_weather_forecast2.Properties.Resources.resources
+C:\Users\pc\Desktop\NguyenTranHuuTai_14004075_DBTT\obj\Debug\dubaothoitiet.csproj.GenerateResource.cache
+C:\Users\pc\Desktop\NguyenTranHuuTai_14004075_DBTT\obj\Debug\dubaothoitiet.csproj.CoreCompileInputs.cache
+C:\Users\pc\Desktop\NguyenTranHuuTai_14004075_DBTT\obj\Debug\Du bao thoi tiet.exe
+C:\Users\pc\Desktop\NguyenTranHuuTai_14004075_DBTT\obj\Debug\Du bao thoi tiet.pdb

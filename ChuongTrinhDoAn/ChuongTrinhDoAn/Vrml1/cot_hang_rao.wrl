@@ -1,0 +1,102 @@
+#VRML V2.0 utf8
+
+DEF	cot_phai Transform {
+	translation	0 -2 0
+	children [
+		DEF	goc Transform {
+			children[
+				Shape {
+				
+					geometry Box {
+						size 1.1 3 1.1
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor .3 .09 .21
+							specularColor .67 .58 .83
+							ambientIntensity .0467
+							shininess .07
+						}
+					}
+				}
+			]
+		}
+		DEF	truc Transform {
+			 translation 0 2.6 0
+			children [
+				Shape {
+				
+					geometry Cylinder {
+						height 4
+						radius 0.33
+					}
+					appearance Appearance {
+						material Material {
+							ambientIntensity 0
+							shininess 0
+						}
+					}
+				}
+				DEF	ngon Transform {
+					translation 0 2 0
+			children[
+				Shape {
+					
+					geometry Box {
+						size 1 0.3 1
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor .41 .44 .6
+							specularColor .32 .4 .4
+							emissiveColor .21 .22 .31
+							ambientIntensity .0567
+							shininess .54
+						}
+					}
+				}
+			]
+		}
+			DEF	ngon2 Transform {
+					translation 0 2.2 0
+			children[
+				Shape {
+				appearance Appearance {
+						material Material {
+							diffuseColor .41 .44 .6
+							specularColor .32 .4 .4
+							emissiveColor .21 .22 .31
+							ambientIntensity .0567
+							shininess .54
+						}
+					}
+					geometry Box {
+						size 0.7 0.1 0.7
+					}
+				}
+			]
+		}
+		DEF	ngon3 Transform	{
+			translation	0 2.6 0
+			children [
+				Shape {
+				
+					geometry Sphere	{
+						radius 0.4
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor .44 .44 0
+							specularColor .74 .76 .53
+							emissiveColor .18 .18 0
+							ambientIntensity .04
+							shininess .11
+						}
+					}
+				}
+			]
+		}
+			]
+		}
+	]
+}

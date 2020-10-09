@@ -1,0 +1,125 @@
+<div class="modal fade" id="Nhom_Modal_Them">
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+            
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h2 class="modal-title text-center" >Thêm nhóm sản phẩm</h2>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              
+              <!-- Modal body -->
+              <div class="modal-body" >
+                <table style="width: 100%; display: table;border-collapse: separate;border-spacing: 20px">            
+                    <tr>
+                       <td>
+                          <b>Mã nhóm</b><br>
+                         <input type="text" name="" style="width: 100%">
+                      </td> 
+                      <td>
+                          <b>Tên nhóm</b><br>
+                         <input type="text" name="" style="width: 100%">
+                      </td>               
+                    </tr>                   
+                </table>
+              </div>
+              
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                 <button type="button" class="btn btn-success" data-dismiss="modal"><i class="fas fa-save"></i> Lưu</button>
+                  <button type="button" class="btn btn-warning" data-dismiss="modal"><i class="fas fa-eraser"></i> Nhập lại</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fas fa-times-circle"></i> Đóng</button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+<div class="modal fade" id="Nhom_Modal_Sua">
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+            
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h2 class="modal-title text-center" >Cập nhật nhóm sản phẩm</h2>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              
+              <!-- Modal body -->
+              <div class="modal-body" >
+                <table style="width: 100%; display: table;border-collapse: separate;border-spacing: 20px">            
+                    <tr>
+                       <td>
+                          <b>Mã Nnóm</b><br>
+                         <input type="text" name="" style="width: 100%">
+                      </td>
+                      <td>
+                          <b>Tên nhóm</b><br>
+                         <input type="text" name="" style="width: 100%">
+                      </td>               
+                    </tr>                   
+                </table>
+              </div>
+              
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                 <button type="button" class="btn btn-success" data-dismiss="modal"><i class="fas fa-save"></i> Lưu</button>
+                  <button type="button" class="btn btn-warning" data-dismiss="modal"><i class="fas fa-eraser"></i> Nhập lại</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fas fa-times-circle"></i> Đóng</button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+<div class="modal fade" id="Nhom_Modal_Xoa">
+
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+            
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h2 class="modal-title text-center" >Xác nhận xóa</h2>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              
+              <!-- Modal body -->
+              <div class="modal-body" >
+                <span>Bạn có chắc muốn xóa dữ liệu này?</span>
+              </div>
+              
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                 <button type="button" class="btn btn-success" data-dismiss="modal"><i class="fas fa-check-square"></i> OK</button>
+                 <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fas fa-times-circle"></i> Đóng</button>         
+              </div>
+              
+            </div>
+          </div>
+        </div>
+		<h3 id="table_header" style="text-align: center;color: #FC0606;font-weight: bolder;">DANH SÁCH NHÓM SẢN PHẨM</h3>
+<div class="row box" id="dmnhomsanpham" >
+        <div class="col-xs-12">            
+              <table id="table_nhomsanpham" class="table table-bordered">
+                <caption><button class="btn btn-primary" data-toggle="modal" data-target="#Nhom_Modal_Them"><i class="fas fa-plus-square"></i> Thêm</button></caption>
+                <thead>
+                <tr>
+                  <th class="text-center">STT</th>
+                   <th class="text-center">Mã nhóm</th>
+                  <th class="text-center">Tên nhóm</th>       
+              
+                  <th class="text-center">Sửa</th>
+                  <th class="text-center">Xóa</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td style="vertical-align: middle;text-align: center;">1</td>
+                   <td style="vertical-align: middle;text-align: center;">TTNT</td>
+                  <td style="vertical-align: middle;text-align: center;">Trang trí nội thất</td> 
+                   <td style="vertical-align: middle;text-align: center;"><button  class="btn btn-success" data-toggle="modal" data-target="#Nhom_Modal_Sua"><i class="fas fa-pencil-alt"></i></button></td>
+                  <td style="vertical-align: middle;text-align: center;"><button class="btn btn-danger" data-toggle="modal" data-target="#Nhom_Modal_Xoa"><i class="fas fa-trash-alt"></i></button></td>
+                </tr>
+                                             
+               </tbody>             
+              </table>
+       </div>
+     </div> 

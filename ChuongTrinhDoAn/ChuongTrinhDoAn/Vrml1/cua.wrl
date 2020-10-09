@@ -1,0 +1,264 @@
+#VRML V2.0 utf8
+DEF	cuaphai Transform {
+	rotation 0 1 0 3.15
+	children [
+		DEF	quay CylinderSensor	{
+		 maxAngle 2
+		 minAngle 0
+		 enabled TRUE
+		}
+		DEF	cuaphai1 Transform {
+			
+			   translation -2.025 0 0
+			children [
+				Transform {
+					  translation 1 0 0	
+					children [
+							Shape {
+					
+					geometry Box {
+						size 2 3 0.03
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor 0 .35 .25
+							specularColor 0 .31 .36
+							ambientIntensity .0533
+							shininess .32
+							transparency 0.5
+						}
+					}
+				}
+				
+					]
+				}
+			
+			
+			
+	#	
+		DEF	thanh_ngang_tren Transform {
+			translation	1 1.4 0
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							ambientIntensity 0
+						}
+					}
+					geometry Box {size 2 0.2 0.06}
+				}
+			]
+		}
+			DEF	thanh_ngang_giua2 Transform {
+			translation	1 0 0
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							ambientIntensity 0
+						}
+					}
+					geometry Box {size 2 0.2 0.06}
+				}
+			]
+		}
+
+		  	DEF	thanh_ngang_duoi Transform {
+			translation	1 -1.4 0
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							ambientIntensity 0
+						}
+					}
+					geometry Box {size 2 0.2 0.06}
+				}
+			]
+		}
+
+
+			DEF	thanh_ngang_giua Transform {
+			translation	1 0 0
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							ambientIntensity 0
+						}
+					}
+					geometry Box {size 0.2 3 0.06}
+				}
+			]
+		}
+
+		DEF	thanh_ngang_phai Transform {
+			translation	-0.038 0 0
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							ambientIntensity 0
+						}
+					}
+					geometry Box {size 0.2 3 0.06}
+				}
+			]
+		}
+
+		 	DEF	thanh_ngang_trai Transform {
+			translation	1.92 0 0
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							ambientIntensity 0
+						}
+					}
+					geometry Box {size 0.2 3 0.06}
+				}
+			]
+		}
+
+
+
+			]
+		}
+	]
+}
+ROUTE quay.rotation_changed	TO cuaphai1.rotation
+
+
+DEF	cuatrai Transform {
+	rotation 0 1 0 3.15
+	children [
+		DEF	quay1 CylinderSensor	{
+		 maxAngle 0
+		 minAngle -2
+		 enabled TRUE
+		}
+	
+		DEF	cuatrai1 Transform {
+			
+			   translation 2.025 0 0
+			children [
+				Transform {
+					  translation -1 0 0	
+					children [
+							Shape {
+					
+					geometry Box {
+						size 2 3 0.03
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor 0 .35 .25
+							specularColor 0 .31 .36
+							ambientIntensity .0533
+							shininess .32
+							transparency 0.5
+						}
+					}
+					
+				}	
+					]
+				}
+				##
+					DEF	thanh_ngang_tren1 Transform {
+			translation	-1 1.4 0
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							ambientIntensity 0
+						}
+					}
+					geometry Box {size 2 0.2 0.06}
+				}
+			]
+		}
+
+				   	DEF	thanh_ngang_duoi1 Transform {
+			translation	-1 -1.4 0
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							ambientIntensity 0
+						}
+					}
+					geometry Box {size 2 0.2 0.06}
+				}
+			]
+		}
+			DEF	thanh_ngang_giua1 Transform {
+			translation	-1 0 0
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							ambientIntensity 0
+						}
+					}
+					geometry Box {size 2 0.2 0.06}
+				}
+			]
+		}
+
+
+			DEF	thanh_ngang_giua4 Transform {
+			translation	-1 0 0
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							ambientIntensity 0
+						}
+					}
+					geometry Box {size 0.2 3 0.06}
+				}
+			]
+		}
+
+		DEF	thanh_ngang_phai1 Transform {
+			translation	-0.038 0 0
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							ambientIntensity 0
+						}
+					}
+					geometry Box {size 0.2 3 0.06}
+				}
+			]
+		}
+
+		 	DEF	thanh_ngang_trai1 Transform {
+			translation	-1.92 0 0
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+						}
+					}
+					geometry Box {size 0.2 3 0.06}
+				}
+			]
+		}
+
+
+
+
+				###
+			
+				
+			]
+		}
+		
+	]
+}
+ROUTE quay1.rotation_changed TO cuatrai1.rotation
+
+
+

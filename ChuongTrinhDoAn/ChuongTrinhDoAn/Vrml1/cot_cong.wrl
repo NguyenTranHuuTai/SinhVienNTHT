@@ -1,0 +1,155 @@
+#VRML V2.0 utf8
+DEF	cot_cong Transform {
+	translation	-4 0 0
+	children [
+		DEF	goc Transform {
+			children [
+				Shape {
+					
+					geometry Box {size 1 4 1}
+					appearance Appearance {
+						material Material {
+							diffuseColor .27 .3 .3
+							specularColor .49 .49 .49
+							emissiveColor .27 .3 .3
+							ambientIntensity 0
+							shininess .1
+						}
+					}
+				}
+			]
+		}
+		DEF	be1 Transform {
+			translation	0 2 0
+			children [
+				Shape {
+				
+					geometry Box {size 1.08 0.17 1.08}
+					appearance Appearance {
+						material Material {
+							diffuseColor .5 .33 .21
+							specularColor .76 .73 .23
+							emissiveColor .14 .09 .06
+							ambientIntensity .0667
+							shininess .07
+						}
+					}
+				}
+			]
+		}
+		DEF	be2	Transform {
+			translation	0 2.2 0
+			children [
+				Shape {
+				appearance Appearance {
+						material Material {
+							diffuseColor .5 .33 .21
+							specularColor .76 .73 .23
+							emissiveColor .14 .09 .06
+							ambientIntensity .0667
+							shininess .07
+						}
+					}
+					geometry Box {size 0.8 0.5 0.8}
+				}
+			]
+		}
+		DEF	be3	Transform {
+			translation	0 2.4 0
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor .5 .33 .21
+							specularColor .76 .73 .23
+							emissiveColor .14 .09 .06
+							ambientIntensity .0667
+							shininess .07
+						}
+					}
+					geometry Box {size 1.04 0.13 1.04}
+					
+				}
+			]
+		}
+		DEF	be4	Transform {
+			translation	0 2.47 0
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor .5 .33 .21
+							specularColor .76 .73 .23
+							emissiveColor .14 .09 .06
+							ambientIntensity .0667
+							shininess .07
+						}
+					}
+					geometry Box {size 1.09 0.07 1.09}
+					
+				}
+			]
+		}
+		DEF	be5	Transform {
+			translation	0 2.52 0
+			children [
+				Shape {
+				
+					geometry Box {size 1.12 0.07 1.12}
+					appearance Appearance {
+						material Material {
+							diffuseColor .5 .33 .21
+							specularColor .76 .73 .23
+							emissiveColor .14 .09 .06
+							ambientIntensity .0667
+							shininess .07
+						}
+					}
+					
+				}
+			]
+		}
+		DEF	bi Transform {
+		translation	0 2.9 0
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor .38 .38 .42
+							specularColor .53 .53 .53
+							ambientIntensity .0933
+							shininess .93
+						}
+					}
+					geometry Sphere	{
+						radius 0.4
+					}
+				}
+			]													  
+		}
+	]
+}
+DEF	cong_phai Transform	{
+	translation	6 0 0
+	children [
+		USE	cot_cong
+	]
+}
+DEF	mai_che Transform {
+	translation	-1 3.6 0
+	scale 1.3 0.7 0.8
+	children [
+		Inline {
+			url	"mai_cong.wrl"
+		}
+	]
+}
+DEF	cong Transform {
+	translation	-1 0.4 0.1
+	scale 0.7 0.7 0.7
+	children [
+		Inline {
+			url	"canh_cong2.wrl"
+		}
+	]
+}

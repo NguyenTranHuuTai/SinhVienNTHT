@@ -1,0 +1,88 @@
+#VRML V2.0 utf8
+
+DEF	cuaphai Transform {
+	rotation 0 1 0 3.15
+	children [
+		DEF	quay CylinderSensor	{
+		 maxAngle 1.9
+		 minAngle 0
+		 enabled TRUE
+		}
+		DEF	cuaphai1 Transform {
+			
+			   translation -2.015 0 0
+			children [
+				Transform {
+					  translation 1 0 0	
+					children [
+							Shape {
+					appearance Appearance {
+						material Material {
+						
+						}
+						texture	ImageTexture {
+							url	"anh\anh_cua.jpg"
+							repeatS	TRUE
+							repeatT	TRUE
+						}
+					}
+					geometry Box {
+						size 2 3 0.03
+					}
+				}	
+					]
+				}
+			
+			
+				
+			]
+		}
+	]
+}
+ROUTE quay.rotation_changed	TO cuaphai1.rotation
+
+
+DEF	cuatrai Transform {
+	rotation 0 1 0 3.15
+	children [
+		DEF	quay1 CylinderSensor	{
+		 maxAngle 0
+		 minAngle -1.9
+		 enabled TRUE
+		}
+	
+		DEF	cuatrai1 Transform {
+			
+			   translation 2.015 0 0
+			children [
+				Transform {
+					  translation -1 0 0	
+					children [
+							Shape {
+					
+					geometry Box {
+						size 2 3 0.03
+					}
+					appearance Appearance {
+						material Material {
+						
+
+						}
+						texture	ImageTexture {
+							url	"anh\anh_cua.jpg"
+							repeatS	TRUE
+							repeatT	TRUE
+						}
+					}
+				}	
+					]
+				}
+				
+			]
+		}
+		
+	]
+}
+ROUTE quay1.rotation_changed TO cuatrai1.rotation
+
+

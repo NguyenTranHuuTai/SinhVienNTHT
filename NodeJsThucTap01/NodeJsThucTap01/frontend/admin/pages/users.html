@@ -1,0 +1,184 @@
+<div ng-controller="users">
+<div class="modal fade" id="Users_Modal_Add">
+    <form name="Users_Form_Add" novalidate>
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+          
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h2 class="modal-title text-center" >Thêm tài khoản</h2>             
+            </div>
+            
+            <!-- Modal body -->
+			
+            <div class="modal-body" >
+			
+              <table style="width: 100%; display: table;border-collapse: separate;border-spacing: 20px">
+                  <tr>
+                    <td>
+                      <b>Họ tên</b><br>
+                      <input type="text" id="A_txtHoten" name="A_txtHoten" ng-model="A_txtHoten"  style="width: 100%"><br>					  
+                    </td>
+                    <td>
+                        <b>Username</b><br>
+                        <input type="text" id="A_txtUsername" name="A_txtUsername" ng-model="A_txtUsername" style="width: 100%" required><br>
+						 <span ng-show="Users_Form_Add.A_txtUsername.$touched && Users_Form_Add.A_txtUsername.$invalid">Tài khoản không được trống.</span>
+                    </td>
+                  </tr>
+                   <tr>
+                    <td>
+                        <b>Password</b><br>
+                      <input type="text" id="A_txtPassword" name="A_txtPassword" ng-model="A_txtPassword"  style="width: 100%" required><br>
+					  <span ng-show="Users_Form_Add.A_txtPassword.$touched && Users_Form_Add.A_txtPassword.$invalid">Mật khẩu không được trống.</span>
+                    </td>
+                    <td>
+                        <b>Số điện thoại</b><br>
+                        <input type="text" id="A_txtSdt"  style="width: 100%"><br>
+						
+                    </td>
+                  </tr>
+					<tr>
+                    <td>
+                        <b>Email</b><br>
+                      <input type="email" id="A_txtEmail" name="A_txtEmail" ng-model="A_txtEmail"  style="width: 100%"><br>
+					  <span ng-show="Users_Form_Add.A_txtEmail.$touched && Users_Form_Add.A_txtEmail.$invalid">Email không hợp lệ.</span>
+                    </td>                   
+                  </tr> 		                 
+              </table>
+			 
+            </div>
+			
+			
+            
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button  type="submit" ng-disabled="Users_Form_Add.$invalid"  ng-click="Add_User()" class="btn btn-success" ><i class="fas fa-save"></i> Lưu</button>
+                <button type="reset" class="btn btn-warning" ><i class="fas fa-eraser"></i> Nhập lại</button>
+              <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fas fa-times-circle"></i> Đóng</button>
+            </div>
+            
+          </div>
+        </div>
+	</form>
+</div>
+<div class="modal fade" id="Users_Modal_Edit">
+	<form name="Users_Form_Edit" novalidate>
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+          
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h2 class="modal-title text-center" >Cập nhật tài khoản</h2>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            
+            <!-- Modal body -->
+           <div class="modal-body" >
+              <table  style="width: 100%; display: table;border-collapse: separate;border-spacing: 20px">
+                  <tr>
+                    <td>
+                      <b>Họ tên</b><br>
+                      <input type="text" id="E_txtHoten"  style="width: 100%" value="{{current_selected_user.hoten}}">
+                    </td>
+                    <td>
+                        <b>Username</b><br>
+                        <input type="text" id="E_txtUsername" name="E_txtUsername" ng-model="current_selected_user.username"  style="width: 100%" required><br>
+						<span ng-show="Users_Form_Edit.E_txtUsername.$touched && Users_Form_Edit.E_txtUsername.$invalid">Tài khoản không được trống.</span>
+                    </td>
+                  </tr>
+                   <tr>
+                    <td>
+                        <b>Password</b><br>
+                      <input type="text" id="E_txtPassword" name="E_txtPassword" ng-model="current_selected_user.password"  style="width: 100%" required><br>
+					  <span ng-show="Users_Form_Edit.E_txtPassword.$touched && Users_Form_Edit.E_txtPassword.$invalid">Mật khẩu không được trống.</span>
+                    </td>
+                    <td>
+                        <b>Số điện thoại</b><br>
+                        <input type="text" id="E_txtSdt" value="{{current_selected_user.sdt}}"  style="width: 100%">
+                    </td>
+                  </tr>
+					<tr>					
+                    <td>
+                        <b>Email</b><br>
+                      <input type="email" id="E_txtEmail" name="E_txtEmail" ng-model="current_selected_user.email"   style="width: 100%"><br>
+					  <span ng-show="Users_Form_Edit.E_txtEmail.$touched && Users_Form_Edit.E_txtEmail.$invalid">Email không hợp lệ.</span>
+                    </td>
+					<td hidden>
+                      <b>ID</b><br>
+                      <input type="text" id="E_txtId"  style="width: 100%" ng-model="current_selected_user.id">
+                    </td>					
+                  </tr> 				  
+                            
+              </table>
+            </div>
+            
+            <!-- Modal footer -->
+            <div class="modal-footer">
+               <button type="button" ng-disabled="Users_Form_Edit.$invalid" ng-click="Edit_User()" class="btn btn-success" ><i class="fas fa-save"></i> Lưu</button>                
+              <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fas fa-times-circle"></i> Đóng</button>
+            </div>
+            
+          </div>
+        </div>
+	</form>
+</div>
+
+<div class="modal fade" id="Users_Modal_Delete">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+          
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h2 class="modal-title text-center" >Xác nhận xóa</h2>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            
+            <!-- Modal body -->
+            <div class="modal-body" >
+			 <input type="text" id="D_txtId"  style="width: 100%" value="{{current_selected_user.id}}" hidden>
+              <span>Bạn có chắc muốn xóa dữ liệu này?</span>
+            </div>
+            
+            <!-- Modal footer -->
+            <div class="modal-footer">
+               <button type="button" ng-click="Delete_User()" class="btn btn-success" data-dismiss="modal"><i class="fas fa-check-square"></i> OK</button>
+               <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fas fa-times-circle"></i> Đóng</button>         
+            </div>
+            
+          </div>
+        </div>
+</div>
+<h3 id="table_header" style="text-align: center;color: #FC0606;font-weight: bolder;">DANH SÁCH TÀI KHOẢN</h3>
+<div class="row box" id="dmtaikhoan">
+        <div class="col-xs-12">
+              <table  ng-if="list_users" datatable="ng" id="table_taikhoan"  class="table table-bordered" dt-options="dtOptions">
+                <caption><button class="btn btn-primary" data-toggle="modal" data-target="#Users_Modal_Add"><i class="fas fa-plus-square"></i> Thêm</button></caption>
+                <thead>
+                <tr>
+                  <th class="text-center">STT</th>				  
+                  <th class="text-center">Họ tên</th>               
+                  <th class="text-center">Username</th>
+				  <th class="text-center">Password</th>                 
+                  <th class="text-center">Số điện thoại</th>
+                  <th class="text-center">Email</th>					                 
+                  <th class="text-center">Sửa</th>
+                  <th class="text-center">Xóa</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="item in list_users">
+                  <td style="vertical-align: middle;text-align: center;">{{ $index + 1 }}</td>				  
+                  <td style="vertical-align: middle;text-align: center;">{{item.hoten}}</td>
+                  <td style="vertical-align: middle;text-align: center;">{{item.username}}</td>
+				  <td style="vertical-align: middle;text-align: center;">{{item.password}}</td>				  
+                  <td style="vertical-align: middle;text-align: center;">{{item.sdt}}</td>
+                  <td style="vertical-align: middle;text-align: center;">{{item.email}}</td>									  
+                   <td style="vertical-align: middle;text-align: center;"><button ng-click="select_user(item)" class="btn btn-success" data-toggle="modal" data-target="#Users_Modal_Edit"><i class="fas fa-pencil-alt"></i></button></td>
+                  <td style="vertical-align: middle;text-align: center;"><button ng-click="select_user(item)" class="btn btn-danger" data-toggle="modal" data-target="#Users_Modal_Delete"><i class="fas fa-trash-alt"></i></button></td>
+                </tr>                                          
+                </tbody>             
+              </table>              
+       </div>
+</div>
+
+</div>

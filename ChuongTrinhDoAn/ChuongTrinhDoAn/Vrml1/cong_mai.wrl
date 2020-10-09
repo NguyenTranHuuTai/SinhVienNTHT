@@ -1,0 +1,122 @@
+#VRML V2.0 utf8
+DEF	cot_cong Transform {
+	children [
+		DEF	goc Transform {
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor 1 .85 0
+							specularColor .87 .25 .25
+							ambientIntensity .157
+							shininess 1
+						}
+					}
+					geometry Box {size 1 4 1}
+				}
+			]
+		}
+		DEF	be1 Transform {
+			translation	0 2 0
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor .32 .54 .26
+							specularColor .46 .46 .46
+							ambientIntensity .0933
+							shininess .51
+						}
+					}
+					geometry Box {size 1.08 0.17 1.08}
+				}
+			]
+		}
+		DEF	be2	Transform {
+			translation	0 2.2 0
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor .33 .34 .6
+							specularColor .29 .29 .29
+							ambientIntensity .103
+							shininess .79
+						}
+					}
+					geometry Box {size 0.8 0.5 0.8}
+				}
+			]
+		}
+		DEF	be3	Transform {
+			translation	0 2.4 0
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor .23 .39 .19
+							specularColor .2 .3 .29
+							ambientIntensity .06
+							shininess .39
+						}
+					}
+					geometry Box {size 1.04 0.13 1.04}
+					
+				}
+			]
+		}
+		DEF	be4	Transform {
+			translation	0 2.47 0
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor .23 .39 .19
+							specularColor .2 .3 .29
+							ambientIntensity .06
+							shininess .39
+						}
+					}
+					geometry Box {size 1.09 0.07 1.09}
+					
+				}
+			]
+		}
+		DEF	be5	Transform {
+			translation	0 2.52 0
+			children [
+				Shape {
+				
+					geometry Box {size 1.12 0.07 1.12}
+					appearance Appearance {
+						material Material {
+							diffuseColor 1 .85 0
+							specularColor .87 .25 .25
+							ambientIntensity .157
+							shininess 1
+						}
+					}
+					
+				}
+			]
+		}
+		DEF	bi Transform {
+		translation	0 2.9 0
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor .38 .38 .42
+							specularColor .53 .53 .53
+							ambientIntensity .0933
+							shininess .93
+						}
+					}
+					geometry Sphere	{
+						radius 0.4
+					}
+				}
+			]
+		}
+	]
+}

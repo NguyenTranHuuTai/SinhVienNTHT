@@ -1,0 +1,136 @@
+#VRML V2.0 utf8
+
+DEF	nhachinh Transform {
+	scale 1.2 1.6 1.05
+	translation	0 0.26 0.04
+	children [
+		DEF tuong Transform {
+	children [
+		Inline {
+			url	"bonbuctuong.wrl"
+		}
+	]
+}
+DEF	bac_thang Transform	{
+	translation	0 -2.2 4
+	scale 0.45 0.3 0.5
+	children [
+		Inline {
+			url	"bac_thang.wrl"
+		}
+	]
+}
+DEF	mainha Transform {
+	translation	0 3.1 0
+	scale 1.3 1 1.4
+	children [
+		Inline {
+			url	"mai_nha.wrl"
+		}
+	]
+}
+	]
+}
+DEF	phong_ngu_phai Transform	{
+	translation	4.5 -0.2 0.8
+	scale 0.6 1.42 1.3
+	children [
+		Inline {
+			url	"phong_ngu.wrl"
+		}
+	]
+}
+DEF	phong_trai Transform	{
+	translation	-4.5 -0.2 0.8
+	scale 0.6 1.42 1.3
+	children [
+		Inline {
+			url	"phong_ngu.wrl"
+		}
+	]
+}
+# dat 
+DEF	dat Transform {
+	translation	0 -3.45 2
+	children [
+		
+		Inline {
+			url	"dat.wrl"
+		}
+	]
+}
+DEF	hang_rao_sau Transform	{
+	scale 0.3 0.5 0.2
+	translation 0 -1.2 -7.5
+	children [
+		Inline {
+			url	"hang_rao.wrl"
+		}
+	]
+}
+DEF	hang_rao_trai Transform	{
+	scale 0.3 0.5 0.2
+	rotation 0 1 0 -1.54
+	translation  9 -1.2 1.2
+	children [
+		Inline {
+			url	"hang_rao.wrl"
+		}
+	]
+}
+DEF	hang_rao_phai Transform	{
+	scale 0.3 0.5 0.2
+	rotation 0 1 0 1.54
+	translation  -9 -1.2 1.2
+	children [
+		Inline {
+			url	"hang_rao.wrl"
+		}
+	]
+}
+DEF	cot_trai Transform {	 
+	translation	-9.2 -1.7 10
+	scale 0.3 0.5 0.2
+	children [
+		Inline {
+			url	"cot_hang_rao.wrl"
+		}
+	]
+}
+DEF	hang_rao_truoc_trai Transform {
+	scale 0.3 0.5 0.2
+	translation	-6 -1.2 10
+	children [
+		Inline {
+			url	"hang_rao_truoc.wrl"
+		}
+	]
+}
+DEF	hang_rao_truoc_phai Transform {
+	scale 0.3 0.5 0.2
+	translation	6 -1.2 10
+	children [
+		Inline {
+			url	"hang_rao_truoc.wrl"
+		}
+	]
+}
+
+DEF	canh_cong Transform	{
+	translation	0.8 -1.5 10
+
+	children [
+		Inline {
+			url	"cot_cong.wrl"
+		}
+	]
+}
+DEF	co_to_quoc Transform {
+	translation	-8 0.5 8
+	scale 0.5 1 0.5
+	children [
+		Inline {
+			url	"la_co.wrl"
+		}
+	]
+}

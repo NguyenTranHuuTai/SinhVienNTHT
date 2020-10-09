@@ -1,0 +1,20 @@
+#VRML V2.0 utf8
+
+  Shape{
+geometry Text{
+string ["Demo cơ bản vrml"]
+fontStyle FontStyle{
+	family "TYPEWRITER"
+		style "plain"
+		horizontal TRUE
+		justify "MIDDLE"
+		leftToRight TRUE 
+		size 0.9
+		spacing 1.0
+		topToBottom TRUE
+		}
+length [6]
+maxExtent 6
+}
+}
+

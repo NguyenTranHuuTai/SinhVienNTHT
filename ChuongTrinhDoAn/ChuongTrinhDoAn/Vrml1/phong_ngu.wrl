@@ -1,0 +1,282 @@
+#VRML V2.0 utf8
+
+#VRML V2.0 utf8
+
+DEF	buong_ngu Transform	{
+		  translation 0 -2 0
+	children [
+		DEF	tang1 Transform	{
+			children [
+				DEF	nen_nha Transform	{
+					children [
+						Shape {
+							appearance Appearance {
+								material Material {
+									diffuseColor 0 0 0
+									specularColor .29 .3 .29
+									ambientIntensity 0
+									shininess .08
+								}
+							}
+							geometry Box {size 6 0.5 6}
+						}
+					]
+				}
+				DEF	tran_nha Transform {
+					translation	0 4 0
+					children [
+						Shape {
+							 appearance Appearance {
+								material Material {
+									diffuseColor 0 0 0
+									specularColor .29 .3 .29
+									ambientIntensity 0
+									shininess .08
+								}
+							}
+							geometry Box {size 6 0.4 6}
+						}
+					]
+				}
+				DEF	tuong_trai Transform {
+					translation	3 2 0
+					children [
+						Shape {
+							appearance Appearance {
+								material Material {
+									diffuseColor .34 .39 .54
+									specularColor .23 .27 .37
+									emissiveColor .18 .22 .3
+									ambientIntensity .0767
+									shininess .15
+								}
+								
+							}
+							geometry Box {size 0.05 4 6}
+						}
+					]
+				}
+				DEF	tuong_phai Transform {
+					translation	-3 2 0
+					children [
+						Shape {
+							 appearance Appearance {
+								material Material {
+									diffuseColor .34 .39 .54
+									specularColor .23 .27 .37
+									emissiveColor .18 .22 .3
+									ambientIntensity .0767
+									shininess .15
+								}
+								
+							}
+							geometry Box {size 0.05 4 6}
+						}
+					]
+				}
+				DEF	tuong_sau Transform {
+					translation	0 2 -3
+					children [
+						Shape {
+							 appearance Appearance {
+								material Material {
+									diffuseColor .34 .39 .54
+									specularColor .23 .27 .37
+									emissiveColor .18 .22 .3
+									ambientIntensity .0767
+									shininess .15
+								}
+								
+							}
+							geometry Box {size 6 4 0.05}
+						}
+					]
+				}
+				DEF	tuong_truoc_1 Transform	{
+					translation	-2 2 3
+					children [
+						Shape {
+						appearance Appearance {
+								material Material {
+									diffuseColor .34 .39 .54
+									specularColor .23 .27 .37
+									emissiveColor .18 .22 .3
+									ambientIntensity .0767
+									shininess .15
+								}
+								
+							}
+							geometry Box {size 2 4 0.05}
+						}
+					]
+				}
+				DEF	tuong_truoc_2 Transform	{
+					translation	2 2 3
+					children [
+						Shape {
+						appearance Appearance {
+								material Material {
+									diffuseColor .34 .39 .54
+									specularColor .23 .27 .37
+									emissiveColor .18 .22 .3
+									ambientIntensity .0767
+									shininess .15
+								}
+								
+							}
+							geometry Box {size 2 4 0.05}
+						}
+					]
+				}
+				DEF	tuong_truoc_3 Transform	{
+					translation	0 3.35 3
+					children [
+						Shape {
+							appearance Appearance {
+								material Material {
+									diffuseColor .34 .39 .54
+									specularColor .23 .27 .37
+									emissiveColor .18 .22 .3
+									ambientIntensity .0767
+									shininess .15
+								}
+								
+							}
+							geometry Box {size 2 1.3 0.05}
+						}
+					]
+				}
+				DEF	maiche Transform {
+					 	translation	0 2.9 3.1
+					children [
+						Shape {
+							appearance Appearance {
+								material Material {
+									diffuseColor 0 0 0
+									specularColor .29 .3 .29
+									ambientIntensity 0
+									shininess .08
+								}
+
+							}
+							geometry Box {
+								 size 2 0.04 0.6
+							}
+						}
+					]
+				}
+					DEF	tuong_truoc_4 Transform	{
+					translation	0 0.65 3
+					children [
+						Shape {
+						
+							geometry Box {size 2 1.3 0.05}
+							appearance Appearance {
+								material Material {
+									diffuseColor .34 .39 .54
+									specularColor .23 .27 .37
+									emissiveColor .18 .22 .3
+									ambientIntensity .0767
+									shininess .15
+								}
+								
+							}
+							
+						}
+					]
+				}
+			
+				DEF cotnha_trai_truoc Transform {
+					translation	-3 2 3
+					children [
+						Shape {
+							appearance Appearance {
+								material Material {
+									
+								}
+								texture	ImageTexture {
+									url	"anh/sss.jpg"
+									repeatS	TRUE
+									repeatT	TRUE
+								}
+							}
+							geometry Box {size 0.2 4.5 0.2}
+						}
+					]
+				}
+					DEF cotnha_phai_truoc Transform {
+					translation	3 2 3
+					children [
+						Shape {
+							appearance Appearance {
+								material Material {
+								
+								}
+								texture	ImageTexture {
+									url	"anh/sss.jpg"
+									repeatS	TRUE
+									repeatT	TRUE
+								}
+							}
+							geometry Box {size 0.2 4.5 0.2}
+						}
+					]
+				}
+					DEF cotnha_trai_sau Transform {
+					translation	-3 2 -3
+					children [
+						Shape {
+							appearance Appearance {
+								material Material {
+								
+								}
+								texture	ImageTexture {
+									url	"anh/sss.jpg"
+									repeatS	TRUE
+									repeatT	TRUE
+								}
+							}
+							geometry Box {size 0.2 4.5 0.2}
+						}
+					]
+				}
+					DEF cotnha_phai_sau Transform {
+					translation	3 2 -3
+					children [
+						Shape {
+							appearance Appearance {
+								material Material {
+									
+								}
+								texture	ImageTexture {
+									url	"anh/sss.jpg"
+									repeatS	TRUE
+									repeatT	TRUE
+								}
+							}
+							geometry Box {size 0.2 4.5 0.2}
+						}
+					]
+				}
+			]
+		}
+			DEF	mainha Transform {
+			translation	0 5.1 0
+			scale 1.3 1 1.4
+			children [
+				Inline {
+					url	"mai_nha.wrl"
+					}
+			]
+		}
+		DEF	cua_so Transform {
+			translation	0 2 3
+			scale 0.49 0.45 0.5
+			children [
+				Inline {
+					url	"cua.wrl"
+				}
+			]
+		}
+	]
+}

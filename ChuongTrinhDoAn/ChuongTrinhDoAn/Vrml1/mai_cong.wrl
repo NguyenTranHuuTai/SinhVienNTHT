@@ -1,0 +1,103 @@
+#VRML V2.0 utf8
+
+DEF	mai_cong Transform {
+	children [
+		DEF	mai_truoc Transform	{
+			rotation 1 0 0 0.7
+			translation	0 0 0.7
+			children [
+				Shape {
+					
+					geometry Box {size 6 0.05 1.9}
+					appearance Appearance {
+						material Material {
+							diffuseColor .38 .38 .38
+							specularColor 1 .86 .46
+							emissiveColor .18 .18 .18
+							ambientIntensity 0
+							shininess .23
+						}
+					}
+				}
+			]
+		}
+		DEF	mai_sau Transform	{
+			rotation 1 0 0 -0.7
+			translation	0 0 -0.7
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor .38 .38 .38
+							specularColor 1 .86 .46
+							emissiveColor .18 .18 .18
+							ambientIntensity 0
+							shininess .23
+						}
+					}
+					geometry Box {size 6 0.05 1.9}
+				}
+			]
+		}
+		DEF	mat_duoi Transform {
+			translation	0 -0.4 0
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor .38 .38 .38
+							specularColor 1 .86 .46
+							emissiveColor .18 .18 .18
+							ambientIntensity 0
+							shininess .23
+						}
+					}
+					geometry Box {size 6 0.05 2.3}
+				}
+			]
+		}
+		DEF	mat_op_trai Transform{
+			translation	3 0.05 0
+			scale 0.1 1 1.7
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor .38 .38 .38
+							specularColor 1 .86 .46
+							emissiveColor .18 .18 .18
+							ambientIntensity 0
+							shininess .23
+						}
+					}
+					geometry Cone {
+						height 0.92
+						bottomRadius 0.7
+					}
+				}
+			]
+		}
+		DEF	mat_op_phai Transform{
+			translation	-3 0.05 0
+			scale 0.1 1 1.7
+			children [
+				Shape {
+				appearance Appearance {
+						material Material {
+							diffuseColor .38 .38 .38
+							specularColor 1 .86 .46
+							emissiveColor .18 .18 .18
+							ambientIntensity 0
+							shininess .23
+						}
+					}
+					geometry Cone {
+						height 0.92
+						bottomRadius 0.7
+					}
+				}
+			]
+		}
+	
+	]
+}

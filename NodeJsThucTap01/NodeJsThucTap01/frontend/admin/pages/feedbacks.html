@@ -1,0 +1,110 @@
+<div class="modal fade" id="PhanHoi_Modal_TraLoi">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+          
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h2 class="modal-title text-center" >Trả lời phản hồi</h2>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            
+            <!-- Modal body -->
+            <div class="modal-body" >
+              <table style="width: 100%; display: table;border-collapse: separate;border-spacing: 20px;">
+                  <tr>
+                    <td>
+                      <b>Email người gửi</b> 
+                      <input type="text" name="" style="width: 100%">                   
+                    </td>                    
+                  </tr>
+                  <tr>
+                    <td>
+                        <b>Email người nhận</b> 
+                        <input type="text" name="" style="width: 100%">                      
+                    </td>                    
+                  </tr>
+                   <tr>
+                    <td>
+                      <b>Chủ đề</b>
+                      <input type="text" name="" style="width: 100%">                     
+                    </td>                   
+                  </tr>
+                   <tr>
+                    <td>
+                      <b>Nội dung</b>
+                      <textarea rows="10" style="width: 100%"></textarea>                      
+                    </td>                   
+                  </tr>              
+                             
+              </table>
+            </div>
+            
+            <!-- Modal footer -->
+            <div class="modal-footer">
+               <button type="button" class="btn btn-success" data-dismiss="modal"><i class="fas fa-send"></i> Gửi</button>
+                <button type="button" class="btn btn-warning" data-dismiss="modal"><i class="fas fa-eraser"></i> Nhập lại</button>
+              <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fas fa-times-circle"></i> Đóng</button>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+<div class="modal fade" id="PhanHoi_Modal_Xoa">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+            
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h2 class="modal-title text-center" >Xác nhận xóa</h2>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              
+              <!-- Modal body -->
+              <div class="modal-body" >
+                <span>Bạn có chắc muốn xóa dữ liệu này?</span>
+              </div>
+              
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                 <button type="button" class="btn btn-success" data-dismiss="modal"><i class="fas fa-check-square"></i> OK</button>
+                 <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fas fa-times-circle"></i> Đóng</button>         
+              </div>
+              
+            </div>
+          </div>
+      </div>
+	  <h3 id="table_header" style="text-align: center;color: #FC0606;font-weight: bolder;">DANH SÁCH PHẢN HỒI</h3>
+<div class="row box" id="dmphanhoi" >
+        <div class="col-xs-12">            
+             <table id="table_phanhoi" class="table table-bordered">             
+                <thead>
+                <tr>
+                  <th class="text-center" style="vertical-align: middle;text-align: center;">STT</th>                                 
+                  <th class="text-center" style="vertical-align: middle;text-align: center;">Họ tên</th>
+                  <th class="text-center" style="vertical-align: middle;text-align: center;">Tài khoản</th>
+                  <th class="text-center" style="vertical-align: middle;text-align: center;">Số điện thoại</th>
+                  <th class="text-center" style="vertical-align: middle;text-align: center;">Email</th>                 
+                  <th class="text-center" style="vertical-align: middle;text-align: center;">Nội dung</th>
+                  <th class="text-center" style="vertical-align: middle;text-align: center;">Ngày gửi</th>
+                  <th class="text-center" style="vertical-align: middle;text-align: center;">Trạng thái</th>                
+                  <th class="text-center" style="vertical-align: middle;text-align: center;">Trả lời</th>
+                  <th class="text-center" style="vertical-align: middle;text-align: center;">Xóa</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td style="vertical-align: middle;text-align: center;">1</td>                  
+                  <td style="vertical-align: middle;text-align: center;">Phạm Văn A</td>
+                  <td style="vertical-align: middle;text-align: center;"></td>
+                  <td style="vertical-align: middle;text-align: center;">0123456789</td>
+                  <td style="vertical-align: middle;text-align: center;">vana@gmail.com</td>                 
+                  <td style="vertical-align: middle;text-align: center;">dasfaaaaaaaaa</td>
+                  <td style="vertical-align: middle;text-align: center;">25/7/2018</td>
+                  <td style="vertical-align: middle;text-align: center;">Chưa trả lời</td>                             
+                  <td style="vertical-align: middle;text-align: center;"><button class="btn btn-success" data-toggle="modal" data-target="#PhanHoi_Modal_TraLoi"><i class="fas fa-envelope"></i></button></td>
+                  <td style="vertical-align: middle;text-align: center;"><button class="btn btn-danger" data-toggle="modal" data-target="#PhanHoi_Modal_Xoa"><i class="fas fa-trash-alt"></i></button></td>
+                </tr>                               
+               </tbody>             
+              </table>
+       </div>
+     </div>

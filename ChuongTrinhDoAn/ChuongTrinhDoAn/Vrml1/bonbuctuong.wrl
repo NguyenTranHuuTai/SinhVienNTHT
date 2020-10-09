@@ -1,0 +1,126 @@
+#VRML V2.0 utf8
+
+DEF	nha_dan_o Transform	{
+		  translation 0 -2 0
+	children [
+		DEF	tang1 Transform	{
+			children [
+				DEF	nen_nha Transform	{
+					children [
+						Shape {
+							
+							geometry Box {size 6 0.6 6}
+							appearance Appearance {
+								material Material {
+									diffuseColor 0 0 0
+									specularColor .29 .3 .29
+									ambientIntensity 0
+									shininess .08
+								}
+							}
+						
+						}
+					]
+				}
+				DEF	tran_nha Transform {
+					translation	0 4 0
+					children [
+						Shape {
+							 
+							geometry Box {size 6 0.4 6}
+							appearance Appearance {
+								material Material {
+									diffuseColor 0 0 0
+									specularColor .29 .3 .29
+									ambientIntensity 0
+									shininess .08
+								}
+							}
+							
+							
+							
+						}
+					]
+				}
+			
+				DEF	tuong_sau Transform {
+					translation	0 2 -3
+					children [
+						Shape {
+							 
+							geometry Box {size 4.5 4 0.05}
+							appearance Appearance {
+								material Material {
+									diffuseColor .47 .52 .58
+									specularColor 1 1 1
+									ambientIntensity .123
+									shininess .13
+								}
+							}
+						}
+					]
+				}
+				DEF	tuong_truoc_1 Transform	{
+					translation	-1.5 2 3
+					children [
+						Shape {
+						
+							geometry Box {size 1.5 4 0.05}
+							appearance Appearance {
+								material Material {
+									diffuseColor .47 .52 .58
+									specularColor 1 1 1
+									ambientIntensity .123
+									shininess .13
+								}
+							}
+						}
+					]
+				}
+				DEF	tuong_truoc_2 Transform	{
+					translation	1.5 2 3
+					children [
+						Shape {
+						appearance Appearance {
+								material Material {
+									diffuseColor .47 .52 .58
+									specularColor 1 1 1
+									ambientIntensity .123
+									shininess .13
+								}
+							}
+							geometry Box {size 1.5 4 0.05}
+						}
+					]
+				}
+				DEF	tuong_truoc_3 Transform	{
+					translation	0 3.2 3
+					children [
+						Shape {
+						appearance Appearance {
+								material Material {
+									diffuseColor .47 .52 .58
+									specularColor 1 1 1
+									ambientIntensity .123
+									shininess .13
+								}
+							}
+							geometry Box {size 2 1.6 0.05}
+						}
+					]
+				}
+			
+			
+			]
+		}
+		DEF	cua_nha Transform {
+			translation	0 1.347 3
+			scale 0.37 0.699 0.5
+			children [
+				Inline {
+					url	"cua.wrl"
+				}
+			]
+		}
+	]
+}

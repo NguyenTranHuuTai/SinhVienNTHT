@@ -1,0 +1,66 @@
+#VRML V2.0 utf8
+
+
+DEF	cua_trai Transform {
+	children [
+		DEF	quay_trai CylinderSensor {
+			maxAngle 0
+
+			minAngle -1.8
+			enabled	TRUE
+		}
+		DEF	canh_cong_trai Transform	{
+			translation	-3.5 0 0
+			rotation 0 1 0 6.28
+				children [
+				DEF	cong_trai Transform {
+					translation	2.5 0 0
+					children [
+						Inline {
+							url	"canh_cong.wrl"
+						}
+				]
+			}
+		]
+	}
+	]
+}
+ROUTE quay_trai.rotation_changed TO	canh_cong_trai.rotation
+#
+
+
+
+
+
+
+
+
+ DEF	cua_phai Transform {
+	children [
+		DEF	quay_phai CylinderSensor {
+		 maxAngle 1.8
+		 minAngle 0
+		 enabled TRUE
+		}
+		DEF	canh_cong_phai Transform	{
+			translation	3.5 0 0
+				rotation 0 1 0 3.14
+				children [
+				DEF	cong_phai Transform {
+					translation	2.5 0 0
+					children [
+						Inline {
+							url	"canh_cong.wrl"
+						}
+				]
+			}
+		]
+	}
+	]
+}
+ROUTE quay_phai.rotation_changed TO	canh_cong_phai.rotation
+
+
+
+
+

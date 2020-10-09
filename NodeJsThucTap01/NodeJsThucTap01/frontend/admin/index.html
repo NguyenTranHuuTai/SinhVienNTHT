@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html ng-app="admin">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Quản lý bán vật liệu xây dựng</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+   
+  <!-- Bootstrap 3.3.7 -->
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="bower_components/font-awesome/css/all.css">
+   <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+  
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">  
+
+
+  <!-- Jquery --> 
+  <script src="bower_components/jquery/jquery-3.3.1.min.js"></script>
+  <script src="bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+   
+  <script src="bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+ 
+  
+  <!-- Bootstrap 3.3.7 -->
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>   
+
+  <!-- AngularJs -->  
+  <script src="bower_components/angularjs/angular.min.js"></script>
+  <script src="bower_components/angularjs/angular-route.min.js"></script> 
+ 
+  <!-- AngularJs Datatable -->  
+  <script src="bower_components/angularjs_datatable/angular-datatables.min.js"></script>
+   <!--<link rel="stylesheet" href="bower_components/angularjs_datatable/angular-datatables.min.css" type="text/css" />--> 
+ <link rel="stylesheet" href="bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css" type="text/css" />
+  
+  <!-- AdminLTE App -->
+  <script src="dist/js/adminlte.min.js"></script>
+ <!-- Handle Server data --> 
+  <script src="app.js"></script>
+ 
+  
+  
+
+</head>
+<body  class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+  <header class="main-header">
+    <!-- Logo -->
+    <a href="index.html" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini">TT</span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><b>Admin</b></span>
+    </a>
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+      <a class="sidebar-toggle" data-toggle="push-menu" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">       
+
+          <!-- User Account: style can be found in dropdown.less -->
+          <li class="dropdown user user-menu">
+            <a  class="dropdown-toggle" data-toggle="dropdown" role="button">
+              <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+              <span class="hidden-xs">Alexander Pierce</span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- User image -->
+              <li class="user-header">
+                <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+
+                <p>
+                  Alexander Pierce - Web Developer
+                  <small>Member since Nov. 2012</small>
+                </p>
+              </li>
+              <!-- Menu Body -->
+            
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                <div class="pull-left">
+                  <a  class="btn btn-default btn-flat">Thông tin</a>
+                </div>
+                <div class="pull-right">
+                  <a  class="btn btn-default btn-flat">Đăng xuất</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+       
+         
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+        <ul class="sidebar-menu" data-widget="tree">
+        <li class="header">MAIN NAVIGATION</li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-cog"></i> <span>Quản lý hệ thống</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li class="active" ><a href="#!taikhoan" ><i class="fa fa-users"></i> Quản lý tài khoản</a></li>          
+          </ul>
+        </li>
+         <li class="treeview">
+          <a href="#">
+            <i class="fa fa-list-ul"></i> <span>Danh mục</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li class="active" ><a href="#!quicach"><i class="fa  fa-random"></i> Qui cách sản phẩm</a></li>
+            <li class="active" ><a href="#!nhacungcap"><i class="fa fa-university"></i> Nhà cung cấp</a></li>  
+            <li class="active" ><a href="#!loai"><i class="fa fa-object-group"></i> Loại sản phẩm</a></li>
+            <li class="active" ><a href="#!nhom"><i class="fa fa-sitemap"></i> Nhóm sản phẩm</a></li>    
+            <li class="active" ><a href="#!khachhang"><i class="fa fa-male"></i> Khách hàng</a></li>  
+            <li class="active" ><a href="#!sanpham"><i class="fa fa-cube"></i> Sản phẩm</a></li>  
+            <li class="active" ><a href="#!donvitinh"><i class="fa fa-balance-scale"></i> Đơn vị tính</a></li>  
+            <li class="active" ><a href="#!mamau"><i class="fa fa-paint-brush"></i> Mã màu</a></li>  
+                    
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa  fa-shopping-cart"></i> <span>Đơn đặt hàng</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li class="active" ><a href="#!donhang"><i class="fa fa-opencart"></i> Tất cả đơn hàng</a></li>
+            <li class="active" ><a href=""><i class="fa fa-cart-plus"></i> Đơn hàng mới</a></li>  
+            <li class="active" ><a href=""><i class="fa fa-cart-arrow-down"></i> Đơn hàng đang thực hiện</a></li>
+            <li class="active" ><a href=""><i class="fa fa-cart-arrow-down"></i> Đơn hàng đã hủy</a></li>    
+                    
+          </ul>
+        </li>       
+        <li>
+          <a href="#!phanhoi">
+            <i class="fa fa-comments"></i> <span>Phản hồi</span>           
+          </a>
+        </li>         
+           
+       
+      </ul>
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+  
+
+    <!-- Main content -->
+    <section ng-view class="content" >  
+
+
+    </section>
+	
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <div class="pull-right hidden-xs">
+      <b>Version</b> 2.4.0
+    </div>
+    <strong>Copyright &copy; 2014-2016 <a href="https://adminlte.io">Almsaeed Studio</a>.</strong> All rights
+    reserved.
+  </footer>
+
+</div>
+
+</body>
+</html>

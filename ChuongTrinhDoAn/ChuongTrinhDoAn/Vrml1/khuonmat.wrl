@@ -1,0 +1,205 @@
+#VRML V2.0 utf8
+
+							   #VRML V2.0 utf8
+
+DEF	dau Transform {
+	children [
+		DEF	quadau Transform {
+			scale 0.8 1 0.8
+			children [
+				Shape {
+
+					geometry Sphere	{
+						radius 0.8
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor .69 .69 .69
+							specularColor .69 0 .69
+							ambientIntensity .06
+							shininess .04
+						}
+					}
+					
+					
+				}
+			]
+		}
+		DEF	mui Transform {
+		   translation 0 -0.13 0.65
+		   scale 1 1 1.4
+			children [
+				Shape {
+
+					geometry Sphere	{
+						radius 0.08
+					}	
+					appearance Appearance {
+						material Material {
+							diffuseColor .76 .71 .4
+							specularColor .38 .38 .27
+							emissiveColor .18 .17 .09
+							ambientIntensity .05
+							shininess .19
+						}
+					}
+				}
+			]
+		}
+			DEF	mattrai Transform {
+		   translation -0.2 0.1 0.6
+			scale 1.2 1 1
+			children [
+				Shape {
+
+					geometry Sphere	{
+						radius 0.05
+					}	
+					appearance Appearance {
+						material Material {
+							diffuseColor 0 0 0
+							specularColor .29 .3 .29
+							ambientIntensity 0
+							shininess .08
+						}
+					}
+				}
+			]
+		}
+		  	DEF	matphai Transform {
+		   translation 0.2 0.1 0.6
+			scale 1.2 1 1
+			children [
+				Shape {
+
+					geometry Sphere	{
+						radius 0.05
+					}	
+					appearance Appearance {
+						material Material {
+							diffuseColor 0 0 0
+							specularColor .29 .3 .29
+							ambientIntensity 0
+							shininess .08
+						}
+					}
+				}
+			]
+		}
+		DEF	longmaytrai Transform{
+			 translation -0.2 0.2 0.58
+			children [
+				Shape {
+
+					geometry Box {size 0.2 0.04 0.03}
+					appearance Appearance {
+						material Material {
+							diffuseColor 0 0 0
+							specularColor .29 .3 .29
+							ambientIntensity 0
+							shininess .08
+						}
+					}
+					
+				}
+			]
+		}
+		DEF	longmayphai Transform{
+			 translation 0.2 0.2 0.58
+			children [
+				Shape {
+
+					geometry Box {size 0.2 0.04 0.03}
+					appearance Appearance {
+						material Material {
+							diffuseColor 0 0 0
+							specularColor .29 .3 .29
+							ambientIntensity 0
+							shininess .08
+						}
+					}
+				}
+			]
+		} 
+		DEF	mom Transform {
+			scale 1 1 0.3
+			translation	0 -0.4 0.59
+			rotation 0 0 1 3.14
+			children [
+				Shape {
+
+					geometry Cone {
+						height 0.1 
+						bottomRadius 0.2
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor .88 .15 .01
+							specularColor .19 .03 .03
+							ambientIntensity .0833
+							shininess .08
+						}
+					}
+				}
+			]
+		}
+		DEF	taitrai Transform {
+			translation -0.65 0.1 0.1
+			scale 1.2 1.5 0.5
+			children [
+				Shape {
+
+					geometry Sphere	{
+						radius 0.09
+					}	
+					appearance Appearance {
+						material Material {
+							ambientIntensity 0
+							shininess 0
+						}
+					}
+				}
+			]
+		}
+		DEF	taiphai Transform {
+			translation 0.65 0.1 0.1
+			scale 1.2 1.5 0.5
+			children [
+				Shape {
+
+					geometry Sphere	{
+						radius 0.09
+					}	
+					appearance Appearance {
+						material Material {
+							ambientIntensity 0
+							shininess 0
+						}
+					}
+				}
+			]
+		}
+		DEF	dinhdau Transform {
+			translation	0 0.5 0
+			scale 1.5 1 1.5
+			children [
+				Shape {
+
+					geometry Sphere {
+						radius 0.4
+						
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor 0 0 0
+							specularColor .29 .3 .29
+							ambientIntensity 0
+							shininess .08
+						}
+					}
+				}
+			]
+		}
+
+	]
+}

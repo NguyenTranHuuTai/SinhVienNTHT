@@ -1,0 +1,108 @@
+#VRML V2.0 utf8
+
+DEF	co_to_quoc Transform {
+	translation	0 -3 0
+	children [
+		DEF	goc_cot Transform {
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor .38 .38 .42
+							specularColor .53 .53 .53
+							ambientIntensity .0933
+							shininess .93
+						}
+					}
+					geometry Box {
+						size 0.3 1.5 0.3
+					}
+				}
+			]
+		}
+		DEF	truc_cot Transform {
+			translation	0 1.5 0
+			children [
+				Shape {
+						appearance Appearance {
+						material Material {
+							diffuseColor .38 .38 .42
+							specularColor .53 .53 .53
+							ambientIntensity .0933
+							shininess .93
+						}
+					}
+					geometry Cylinder {
+						height 3
+						radius 0.1
+					}
+				}
+			]
+		}
+		DEF	truc_cot1 Transform	{
+			translation	0 3.5 0
+			children [
+				Shape  {
+						appearance Appearance {
+						material Material {
+							diffuseColor .38 .38 .42
+							specularColor .53 .53 .53
+							ambientIntensity .0933
+							shininess .93
+						}
+					}
+					geometry Cylinder {
+						height 2 
+						radius 0.05
+					}
+				}
+			]
+		}
+		DEF	ngon_co Transform {
+			translation	0 5 0
+			children [
+				Shape {
+						appearance Appearance {
+						material Material {
+							diffuseColor .38 .38 .42
+							specularColor .53 .53 .53
+							ambientIntensity .0933
+							shininess .93
+						}
+					}
+						geometry Cylinder {
+						height 1.5 
+						radius 0.027
+					}	
+				}
+			]
+		}
+		DEF	la_co Transform	{
+			translation	1 5 0 
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor .88 .15 .01
+							specularColor .19 .03 .03
+							ambientIntensity .0833
+							shininess .08
+						}
+					}
+					geometry	Box	{
+						size 2 1.5 0.01
+					}
+				}
+			]
+		}
+		DEF	ngoi_sao Transform {
+			 scale 0.2 0.2 2
+			 translation 1 5.3 0
+			children [
+				Inline {
+					url	"ngoi_sao.wrl"
+				}
+			]
+		}
+	]
+}
